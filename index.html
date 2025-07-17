@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KK Computers | Empowering Youth</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+  <!-- Announcement -->
+  <div class="bg-blue-600 text-white text-center py-2 text-sm font-medium">
+    📢 Admissions Open for Web Bootcamp 2025 – Enroll Now!
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" class="bg-white dark:bg-gray-800 shadow-md fixed top-0 left-0 w-full z-50 transition-transform duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">KK Computers</h1>
+      <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle Menu">&#9776;</button>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#carousel" class="hover:text-blue-500 transition">Home</a>
+        <a href="#about" class="hover:text-blue-500 transition">About</a>
+        <a href="#services" class="hover:text-blue-500 transition">Services</a>
+        <a href="#events" class="hover:text-blue-500 transition">Events</a>
+        <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+        <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded focus:outline-none" aria-label="Toggle Theme">🌙</button>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col space-y-3 transition-all duration-300">
+      <a href="#carousel" class="hover:text-blue-500">Home</a>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#services" class="hover:text-blue-500">Services</a>
+      <a href="#events" class="hover:text-blue-500">Events</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+      <button id="theme-toggle-mobile" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded w-fit focus:outline-none">🌙</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-28">
+
+    <!-- Carousel -->
+    <section id="carousel" class="relative overflow-hidden h-96">
+      <img src="https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15861.jpg" class="w-full h-full object-cover" alt="Hero">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white px-6 text-center">
+        <h2 class="text-4xl font-bold mb-4" data-aos="fade-down">Empowering Youth with Future-Ready IT Skills</h2>
+        <p class="text-lg mb-6 max-w-xl" data-aos="fade-up">Join our mission to build a digitally literate generation through training, projects, and tech events.</p>
+        <a href="#services" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white" data-aos="zoom-in">Explore Programs</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-4" data-aos="fade-up">About Us</h3>
+        <p class="text-gray-700 dark:text-gray-300" data-aos="fade-up">KK Computers is dedicated to enhancing IT skills among youth through quality training, real-world projects, and digital literacy programs. We believe in empowering communities by fostering technological innovation and hands-on learning experiences.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-10" data-aos="fade-up">Our Services</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow" data-aos="zoom-in">
+            <h4 class="text-xl font-semibold mb-2">IT Training</h4>
+            <p>Industry-relevant courses in Web, Python, Java, and more.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow" data-aos="zoom-in" data-aos-delay="100">
+            <h4 class="text-xl font-semibold mb-2">Certifications</h4>
+            <p>Globally recognized certifications to boost your career.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow" data-aos="zoom-in" data-aos-delay="200">
+            <h4 class="text-xl font-semibold mb-2">Final Year Projects</h4>
+            <p>Guided projects with documentation and code for BE/BSc/BCA students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="py-16 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-4" data-aos="fade-up">Events & Workshops</h3>
+        <p class="mb-6" data-aos="fade-up">We regularly conduct events to foster learning and collaboration:</p>
+        <ul class="space-y-4 text-left max-w-lg mx-auto">
+          <li data-aos="fade-right">✅ Hack The Web – 24hr Web Development Hackathon</li>
+          <li data-aos="fade-right" data-aos-delay="100">✅ Python & ML Bootcamp for Beginners</li>
+          <li data-aos="fade-right" data-aos-delay="200">✅ Digital Literacy Awareness Drives</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-4" data-aos="fade-up">Get in Touch</h3>
+        <p class="mb-6" data-aos="fade-up">Have questions? Reach out to us anytime!</p>
+        <form class="space-y-4" data-aos="zoom-in" onsubmit="return validateForm()">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded dark:bg-gray-700 focus:outline-none focus:ring" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded dark:bg-gray-700 focus:outline-none focus:ring" required>
+          <textarea rows="4" placeholder="Your Message" class="w-full p-3 border rounded dark:bg-gray-700 focus:outline-none focus:ring" required></textarea>
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+<!-- Floating Action Buttons -->
+<div class="fixed right-6 bottom-6 flex flex-col items-end space-y-3 z-50">
+
+  <!-- Chat Button with icon and label -->
+  <button id="supportBtn" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow focus:outline-none">
+    <i class="fas fa-comment-dots text-lg"></i>
+    <span class="text-sm font-medium">Need Help?</span>
+  </button>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919876543210" target="_blank" aria-label="Chat with us on WhatsApp"
+     class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center">
+    <i class="fab fa-whatsapp fa-xl"></i>
+  </a>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Theme Toggle
+    const toggleTheme = () => document.documentElement.classList.toggle('dark');
+    document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
+    document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
+
+    // Mobile Menu Toggle
+    document.getElementById('menu-toggle')?.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Scroll Hide/Show Navbar
+    let lastScrollY = window.scrollY;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      lastScrollY = window.scrollY;
+    });
+
+    // Form Validation
+    function validateForm() {
+      // Add actual validations if needed
+      return true;
+    }
+  </script>
+
+  <!-- Support Chat Widget -->
+<div id="chatWidget" class="fixed bottom-24 right-6 w-80 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700 hidden flex flex-col z-50">
+  <!-- Header -->
+  <div class="bg-blue-600 text-white px-4 py-2 flex justify-between items-center rounded-t-lg">
+    <span>Support Chat</span>
+    <button id="closeChat" class="text-white text-lg hover:text-gray-200">&times;</button>
+  </div>
+
+  <!-- Messages -->
+  <div id="chatMessages" class="p-4 h-64 overflow-y-auto space-y-2 text-sm">
+    <div class="text-gray-600 dark:text-gray-300">Hi! How can we assist you today?</div>
+  </div>
+
+  <!-- Input -->
+  <div class="p-3 border-t border-gray-200 dark:border-gray-700">
+    <form id="chatForm" class="flex items-center space-x-2">
+      <input type="text" id="chatInput" placeholder="Type your message..." class="flex-1 p-2 rounded border dark:bg-gray-700 dark:text-white focus:outline-none" required>
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded">Send</button>
+    </form>
+  </div>
+</div>
+
+<script>
+    // Support Chat Toggle
+const supportBtn = document.getElementById('supportBtn');
+const chatWidget = document.getElementById('chatWidget');
+const closeChat = document.getElementById('closeChat');
+const chatForm = document.getElementById('chatForm');
+const chatInput = document.getElementById('chatInput');
+const chatMessages = document.getElementById('chatMessages');
+
+supportBtn.addEventListener('click', () => {
+  chatWidget.classList.toggle('hidden');
+});
+
+closeChat.addEventListener('click', () => {
+  chatWidget.classList.add('hidden');
+});
+
+// Simulate chat response
+chatForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const userMsg = chatInput.value.trim();
+  if (!userMsg) return;
+
+  // Append user message
+  const userDiv = document.createElement('div');
+  userDiv.className = "text-right text-blue-600 dark:text-blue-400";
+  userDiv.textContent = userMsg;
+  chatMessages.appendChild(userDiv);
+
+  chatInput.value = "";
+
+  // Simulate bot reply
+  setTimeout(() => {
+    const botDiv = document.createElement('div');
+    botDiv.className = "text-gray-600 dark:text-gray-300";
+    botDiv.textContent = "Thanks! We'll get back to you shortly.";
+    chatMessages.appendChild(botDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }, 800);
+});
+
+</script>
+</body>
+</html>

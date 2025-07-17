@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KK Computers | Empowering Youth</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-y5FMgczXivZT6EUVuW05K2DJxxRLMOIVBgxdOeYqC18EbO/sdsA7TFEYQCeF8VZoz0+9DRu5jwRoV0LIbs9M1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+  <!-- Announcement -->
+  <div class="bg-blue-600 text-white text-center py-2 text-sm">
+    📢 Admissions Open for Web Bootcamp 2025 – Enroll Now!
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">KK Computers</h1>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-2xl" aria-label="Toggle mobile menu">☰</button>
+      </div>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#carousel" class="hover:text-blue-500">Home</a>
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#services" class="hover:text-blue-500">Services</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+        <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">🌓</button>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 flex flex-col space-y-3">
+      <a href="#carousel">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle-mobile" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded w-fit">🌓</button>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <!-- Carousel -->
+    <section id="carousel" class="relative overflow-hidden h-96">
+      <img src="https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15861.jpg" class="w-full h-full object-cover" alt="Hero">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+        <h2 class="text-4xl font-bold mb-4" data-aos="fade-down">Empowering Youth with Future-Ready IT Skills</h2>
+        <p class="text-lg mb-6 max-w-xl" data-aos="fade-up">Join our mission to build a digitally literate generation through training, projects, and tech events.</p>
+        <a href="#services" class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700" data-aos="zoom-in">Explore Programs</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <img src="about-us.jpg" alt="About Us" class="rounded shadow">
+        <div>
+          <h3 class="text-3xl font-semibold mb-4" data-aos="fade-up">About Us</h3>
+          <p class="mb-2" data-aos="fade-up">KK Computers is an IT training institute committed to educating the youth in modern tech skills. We offer hands-on courses, real-time projects, and mentorship programs to prepare students for industry roles.</p>
+          <p data-aos="fade-up" data-aos-delay="100">We believe in empowering the next generation of developers, designers, and tech entrepreneurs by providing access to industry-expert instructors and continuous learning experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-10" data-aos="fade-up">Our Services</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="fade-up">
+            <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37480.jpg" class="rounded mb-4" alt="IT Training">
+            <h4 class="text-xl font-semibold mb-2">IT Training</h4>
+            <p>Industry-relevant courses in Full Stack Web, Python, Java, and more taught by experienced trainers.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://img.freepik.com/free-vector/skills-certification-concept-illustration_114360-7301.jpg" class="rounded mb-4" alt="Certifications">
+            <h4 class="text-xl font-semibold mb-2">Certifications</h4>
+            <p>Globally recognized certifications that validate your expertise and improve job opportunities.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg" class="rounded mb-4" alt="Projects">
+            <h4 class="text-xl font-semibold mb-2">Final Year Projects</h4>
+            <p>Complete project kits with guidance, documentation, and code tailored for college students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-semibold mb-10" data-aos="fade-up">What Our Students Say</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <blockquote class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="zoom-in">
+            <p>“The bootcamp helped me land my first internship. Trainers were highly experienced!”</p>
+            <footer class="mt-2 text-sm text-gray-500">– Shivam Gupta</footer>
+          </blockquote>
+          <blockquote class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="zoom-in" data-aos-delay="100">
+            <p>“Best place to learn web development. Projects were practical and industry-focused.”</p>
+            <footer class="mt-2 text-sm text-gray-500">– Gaurav Tiwari</footer>
+          </blockquote>
+          <blockquote class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="zoom-in" data-aos-delay="200">
+            <p>“Thanks to KK Computers, I cleared multiple certification exams with ease.”</p>
+            <footer class="mt-2 text-sm text-gray-500">– Ayush Tripathi</footer>
+          </blockquote>
+          <blockquote class="bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="zoom-in" data-aos-delay="200">
+            <p>“Best to learn latest technologies realed to Web Development.”</p>
+            <footer class="mt-2 text-sm text-gray-500">– Rohan Rawlo</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6">
+      <div class="max-w-xl mx-auto">
+        <h3 class="text-3xl font-semibold mb-6 text-center" data-aos="fade-up">Get in Touch</h3>
+        <form id="contact-form" class="space-y-4 bg-white dark:bg-gray-800 p-6 rounded shadow" data-aos="zoom-in">
+          <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded dark:bg-gray-700" required />
+          <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border rounded dark:bg-gray-700" required />
+          <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-3 border rounded dark:bg-gray-700" required></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+ <!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-6">
+  <p>&copy; 2025 KK Computers. All rights reserved.</p>
+</footer>
+
+ <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      <!-- WhatsApp Button with icon fix -->
+      <a href="https://wa.me/919321046393" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center text-lg" aria-label="Chat on WhatsApp">
+      <i class="fas fa-phone"></i>
+
+      </a>
+      <!-- Support Button with text beside icon -->
+      <button id="support-btn" class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg" aria-label="Support Chat">
+        <i class="fas fa-comment-dots"></i>
+        <span class="text-sm font-medium">Need Help?</span>
+      </button>
+    </div>
+
+<!-- Support Chat Widget -->
+<div id="chatWidget" class="fixed bottom-24 right-6 w-80 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700 hidden flex flex-col z-50">
+  <!-- Header -->
+  <div class="bg-blue-600 text-white px-4 py-2 flex justify-between items-center rounded-t-lg">
+    <span>Support Chat</span>
+    <button id="closeChat" class="text-white text-lg hover:text-gray-200">&times;</button>
+  </div>
+  <!-- Messages -->
+  <div id="chatMessages" class="p-4 h-64 overflow-y-auto space-y-2 text-sm">
+    <div class="text-gray-600 dark:text-gray-300">Hi! How can we assist you today?</div>
+  </div>
+  <!-- Input -->
+  <div class="p-3 border-t border-gray-200 dark:border-gray-700">
+    <form id="chatForm" class="flex items-center space-x-2">
+      <input type="text" id="chatInput" placeholder="Type your message..." class="flex-1 p-2 rounded border dark:bg-gray-700 dark:text-white focus:outline-none" required>
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papoxr/fW+Y7ukCqt5O5f12L9UlSYtN2WjGV7+3HMLpS3ZK8YLuC8X6MuW27L0hxG/q6FuTRnbKRJmMbD7kgJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
